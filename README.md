@@ -4,7 +4,7 @@ npm i
 ### Main task for work and automatic build
 gulp
 
-### Delete sourcemaps and add localization
+### Delete sourcemaps, add localization and create archive.zip with all files inside
 gulp deploy
 
 ### Create component

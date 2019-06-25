@@ -11,6 +11,7 @@ const runSequence 	= require('run-sequence');
 const fs 			= require('fs');
 const wait 			= require('gulp-wait');
 const svgmin 		= require('gulp-svgmin');
+const zipper 		= require("zip-local");
 
 let path = {
 	src: {
@@ -176,15 +177,22 @@ gulp.task('make', function() {
   runSequence('folder','files');
 });
 
+gulp.task('archive', function() {
+	zipper.sync.zip("build/").compress().save("build/archive.zip");
+});
+
 gulp.task('watch', ['clean','browser-sync', 'html', 'style', 'scripts', 'img', 'fonts'], function() {
 	gulp.watch([path.watch.htmlApp, path.watch.html], ['html']);
 	gulp.watch([path.watch.style], ['style']);
 	gulp.watch([path.watch.img], ['img']);
-	gulp.watch([path.watch.svg], ['svg']);
 	gulp.watch([path.watch.scripts], ['scripts']);
 	gulp.watch([path.watch.fonts], ['fonts']);
 });
 
-gulp.task('deploy', ['clean', 'html', 'deploy:style', 'deploy:scripts', 'img', 'fonts', 'localization']);
+gulp.task('build', ['clean', 'html', 'deploy:style', 'deploy:scripts', 'img', 'fonts', 'localization']);
+
+gulp.task('deploy', function() {
+  runSequence('build','archive');
+});
 
 gulp.task('default', ['watch']);
