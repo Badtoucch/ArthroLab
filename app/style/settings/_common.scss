@@ -4,7 +4,7 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 html{
 	overflow-x: hidden;
@@ -55,16 +55,19 @@ br{
 	}
 	@include r(1023){
 		font-size: 36px;
-		line-height: normal;
+		line-height: 36px;
 	}
 	@include r(767){
 		font-size: 32px;
+		line-height: 32px;
 	}
 	@include r(639){
 		font-size: 29px;
+		line-height: 29px;
 	}
 	@include r(479){
 		font-size: 26px;
+		line-height: 26px;
 	}
 }
 
