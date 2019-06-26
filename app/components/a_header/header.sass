@@ -1,0 +1,259 @@
+.header
+	background: url(../img/head-bg.jpg) no-repeat center #fff
+	padding: 130px 0 156px
+	position: relative
+	&-woman
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-47%)
+	&-content
+		display: flex
+		justify-content: space-between
+	&-left
+		width: 370px
+	&__title
+		font-size: 62px
+		font-weight: 700
+		line-height: 50px
+		color: #373244
+		span:nth-child(2)
+			color: #5788c0
+			font-size: 42px
+			line-height: 34px
+	&__subtitle
+		color: #373244
+		font-size: 32px
+		line-height: 32px
+		margin-top: 32px
+	&-list
+		margin-top: 80px
+		&__item
+			color: #373244
+			font-size: 20px
+			font-weight: 400
+			line-height: 1
+			margin-bottom: 20px
+			position: relative
+			padding-left: 25px
+			margin-left: 3px
+			&:last-child
+				margin-bottom: 0
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				width: 5px
+				height: 5px
+				border: 2px solid #4377c6
+				border-radius: 50%
+	&-prodcomment
+		color: #5788bf
+		font-size: 20px
+		font-style: italic
+		line-height: 24px
+		position: relative
+		padding-left: 70px
+		margin-top: 70px
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			bottom: -60px
+			right: 70px
+			background: url(../img/prod-arrow.png) center no-repeat
+			width: 99px
+			height: 46px
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 0
+			background: url(../img/tubes.png) no-repeat center
+			width: 52px
+			height: 52px
+	&-center
+		width: 530px
+		&__prod
+			position: absolute
+			bottom: -64px
+	&-pack
+		width: 398px
+		position: relative
+		left: 4px
+	&-capsule
+		width: 86px
+		position: absolute
+		bottom: 12px
+		left: -43px
+	&-right
+		width: 270px
+
+
+.form
+	padding-bottom: 30px
+	width: 270px
+	border-radius: 10px
+	border: 4px solid #5789bf
+	background-color: #ffffff
+	box-shadow: 0px 0px 20px 0px rgba(165,165,165,0.75)
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		height: 15px
+		width: 100%
+		background-color: #f1f4f6
+		border-radius: 0 0 10px 10px
+	&-top
+		padding-top: 18px
+		background-color: #f1f4f6
+		border-radius: 10px 10px 0 0
+		&__title
+			text-align: center
+			color: #000000
+			font-size: 20px
+			font-weight: 700
+		&__date
+			color: #5788bf
+			line-height: 24px
+	&-question
+		color: #4a5665
+		font-size: 18px
+		font-weight: 400
+		line-height: 1
+		text-align: center
+		padding-top: 10px
+	form
+		padding: 0 20px
+		margin-top: 12px
+		input
+			box-shadow: inset 2px 3px 5px rgba(34, 35, 39, 0.09)
+			border-radius: 5px
+			border: 1px solid #dedddd
+			background-color: #ffffff
+			height: 60px
+			width: 100%
+			padding-left: 55px
+			margin-bottom: 15px
+			color: #666666
+			font-size: 18px
+			font-weight: 400
+			line-height: 1
+			padding-right: 15px
+			&:hover, &:focus
+				transition: all 0.2s ease
+				box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2)
+	&__input-name, &__input-phone
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+	&__input-name:before
+		width: 19px
+		height: 23px
+		background: url(../img/user.svg) no-repeat center
+		top: 17px
+		left: 20px
+	&__input-phone:before
+		width: 21px
+		height: 24px
+		background: url(../img/phone.svg) no-repeat center
+		top: 17px
+		left: 20px
+	&-lastpack
+		color: #000000
+		font-size: 18px
+		font-weight: 700
+		text-align: center
+		line-height: 1
+		margin-top: 20px
+		span
+			color: #5789bf
+.price
+	display: flex
+	justify-content: center
+	width: 100%
+	margin-top: 10px
+	margin-bottom: 10px
+	padding-bottom: 15px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: -10px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 10px 132px 0 132px
+		border-color: #f1f4f6 transparent transparent transparent
+	&-line
+		width: 1px
+		height: 53px
+		background-color: #d1d0d0
+		opacity: 0.6
+		position: relative
+		top: 2px
+	&-old
+		margin-right: 15px
+		&__title
+			color: #666666
+			font-size: 14px
+			font-weight: 400
+			line-height: 1
+			margin-top: 1px
+		&__count
+			margin-top: 16px
+			color: #3a3a3a
+			font-weight: 400
+			line-height: 24px
+			letter-spacing: -1.4px
+			font-size: 28px
+			.x_price_previous
+				position: relative
+				&:before,
+				&:after
+					content: ''
+					position: absolute
+					left: 50%
+					top: 50%
+					width: 100%
+					height: 1px
+					background-color: #f01d07
+					transform: translateX(-50%) translateY(-50%) rotate(20deg)
+				&:after
+					transform: translateX(-50%) translateY(-50%) rotate(-20deg)
+			.x_currency
+				font-size: 16px
+				margin-left: 2px
+				letter-spacing: -0.4px
+	&-new
+		margin-left: 15px
+		&__title
+			color: #30302f
+			font-size: 16px
+			font-weight: 700
+			line-height: 1
+		&__count
+			margin-top: 1px
+			font-size: 44px
+			font-weight: 700
+			letter-spacing: -1.1px
+			color: #f3764d
+			.x_currency
+				font-size: 16px
+				letter-spacing: normal
+				font-weight: 400
+				margin-left: 2px
+				color: #f3764d
+			.star
+				font-size: 18px
