@@ -1,24 +1,116 @@
 .navbar
 	height: 56px
 	background-color: #d9dbe0
-	position: fixed
-	top: 0
 	z-index: 10
 	width: 100%
-	.container
+	position: relative
+	margin-bottom: -56px
+	position: fixed
+	top: 0
+	
+	+r(1023)
+		margin-bottom: -10px
+	&-content
 		display: flex
 		justify-content: space-between
 		align-items: center
+		width: 1190px
+		padding: 0 10px
+		margin-right: auto
+		margin-left: auto
+		+r(1189)
+			width: 1023px
+		+r(1023)
+			width: 100%
+			padding: 0
 .nav
 	display: flex
+	+r(1023)
+		display: none
 	&-item
 		margin-left: 50px
 		color: #373244
 		font-size: 18px
 		font-weight: 400
 		line-height: 18px
+		&:first-child
+			margin-left: 0
 		a
-			border-bottom: 2px dotted #000
+			border-bottom: 2.4px dotted #000
 			color: #373244
 			&:hover
-				font-weight: bold
+				border-bottom: none
+	&-btn
+		display: none
+		background-color: #d9dbe0
+		transition: all .5s linear
+		+r(1023)
+			display: block
+.navbar_hide
+	width: 63px
+	height: 56px
+	transition: all .5s linear
+.toggle-mnu
+	display: block
+	width: 33px
+	height: 21px
+	position: absolute
+	top: 18px
+	right: 15px
+.toggle-mnu span 
+	position: relative
+	display: block
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before
+	width: 100%
+	height: 4px
+	background-color: #5788c0
+	transition: all 0.3s
+	border-radius: 2px
+.toggle-mnu span:after, .toggle-mnu span:before
+	content: ""
+	position: absolute
+	left: 0
+	top: 8px
+.toggle-mnu span:after
+	top: 16px
+
+.navbar_hide .navbar__wrap
+	opacity: 0
+	visibility: hidden
+.toggle-mnu.on span
+	background-color: transparent
+.toggle-mnu.on span:before 
+	transform: rotate(45deg) translate(-1px, 0px)
+.toggle-mnu.on span:after
+	transform: rotate(-45deg) translate(6px, -7px)
+
+.navbar__wrap
+	margin-top: 56px
+	padding: 10px 30px 20px
+	height: 1000px
+	border-top: 3px solid #5788c0
+.menu__item a
+	text-align: center
+	height: 40px
+	width: 100%
+	display: block
+	display: flex
+	justify-content: center
+	align-items: center
+	border-bottom: 1px solid #000
+	border-bottom: 2.4px dotted #000;
+	color: #373244;
+#menu.fixed 
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+.fixed-btn
+	position: fixed
+	top: 0
+	right: 0
+.logo
+	+r(1023)
+		position: absolute
+		left: 0
+		top: 0
