@@ -80,6 +80,36 @@ br{
 .text-nowrap {
 	white-space: nowrap;
 }
+.blue{
+	color: #5789bf
+}
+.grey{
+	color: #94929b;
+	font-weight: 400;
+}
+.img-effect{
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		width: 101%;
+		height: 3px;
+		background: #c5c0ca;
+		transform: skew(30deg);
+		z-index: -1;}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -3px;
+		width: 3px;
+		height: 101%;
+		background: #efebf2;
+		transform: skewY(30deg) ;
+		z-index: -1;}
+}
 .btn{
 	padding-top: 5px;
 	width: 100%;
