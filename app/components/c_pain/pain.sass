@@ -1,0 +1,112 @@
+.pain
+	padding-top: 125px
+	padding-bottom: 176px
+	position: relative
+	+r(1189)
+		padding-top: 90px
+		padding-bottom: 100px
+		overflow: hidden
+	+r(1023)
+		border-top: 1px solid #e4e4e4
+	&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-20.7%)
+			background: url(../img/pain-man.png) center no-repeat
+			width: 1048px
+			height: 698px
+			+r(1189)
+				top: -53px
+				transform: translateX(-24.3%)
+			+r(1023)
+				top: auto
+				bottom: 0
+				transform: translateX(-50%)
+				background-size: 100%
+				width: 667px
+				height: 478px
+			+r(767)
+				width: 655px
+				height: 446px
+			+r(479)
+				width: 462px
+				height: 322px
+	&-content
+		+r(1023)
+			padding-bottom: 400px
+		+r(767)
+			padding-bottom: 390px
+		+r(479)
+			padding-bottom: 280px
+	&-box
+		max-width: 470px
+		+r(1189)
+			max-width: 425px
+		+r(1023)
+			max-width: 100%
+		&__title
+			font-size: 90px
+			font-weight: 700
+			line-height: 78px
+			color: #373244
+			position: relative
+			+r(1189)
+				font-size: 70px
+				line-height: 64px
+			+r(1023)
+				font-size: 36px
+				line-height: 36px
+				text-align: center
+				br
+					display: none
+			+r(767)
+				font-size: 32px
+				line-height: 32px
+			+r(639)
+				font-size: 29px
+				line-height: 29px
+			+r(479)
+				font-size: 26px
+				line-height: 26px
+			&:before
+				content: ''
+				position: absolute
+				top: -42px
+				right: -207px
+				background: url(../img/pain-beat.png) no-repeat center
+				width: 521px
+				height: 200px
+				+r(1189)
+					background-size: 100%
+					width: 434px
+					height: 168px
+					top: -38px
+					right: -131px
+				+r(1023)
+					display: none
+		&__question
+			margin-top: 60px
+			color: #373244
+			font-size: 32px
+			font-weight: 400
+			line-height: 36px
+			+r(1189)
+				font-size: 28px
+				line-height: 32px
+				margin-top: 40px
+			+r(1023)
+				font-size: 25px
+				line-height: 25px
+				margin-top: 10px
+				text-align: center
+			+r(767)
+				font-size: 23px
+				line-height: 23px
+				margin-top: 8px
+			+r(767)
+				font-size: 21px
+				line-height: 21px
+			span
+				color: #f94920
