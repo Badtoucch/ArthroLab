@@ -1,0 +1,175 @@
+.use
+  padding: 80px 0
+
+.use-title
+  margin-bottom: 50px
+
+.use__wrap
+  position: relative
+  padding-bottom: 220px
+
+.use__prop-box
+  position: relative
+  height: 385px
+  display: flex
+  justify-content: space-between
+  z-index: 1
+
+.use__prop-box:after
+  content: ""
+  position: absolute
+  width: 821px
+  height: 160px
+  background-image: url(../img/use__dotted-line.png)
+  top: 50px
+  left: 50%
+  transform: translate(-49%,0) rotate(0deg)
+  z-index: -1
+
+.use__prop
+  width: 100%
+  max-width: 235px  
+  text-align: center
+
+.use__prop--end
+  align-self: flex-end
+
+.use__prop-img
+  margin: 0 auto 25px  
+
+.use__prop-title
+  font-size: 20px
+  font-weight: 700
+  line-height: 1.2
+  color: #373244  
+
+.use_product-box
+  position: absolute
+  left: 52%
+  bottom: 0
+  transform: translate(-50%,0)
+  max-width: 570px
+  height: 360px
+  width: 100%
+
+.use__product-bg
+  position: absolute
+  top: 75px
+  left: 0
+
+.use_product
+  position: absolute
+  max-width: 420px 
+  left: 50%
+  transform: translate(-50%)
+
+
+.use__product-pack
+  max-width: 420px  
+
+.use__product-capsule
+  position: absolute
+  max-width: 100px
+  right: 55px
+  top: 35px
+
+@media (max-width: 1190px)
+  .use__prop--end
+    align-self: center  
+  .use__prop-box:after
+    top: 30px
+    width: 696px
+    height: 137px
+    background-size: contain
+    transform: translate(-50%,0) rotate(0deg)
+  .use__product-bg
+    left: 50%
+    transform: translate(-53%)
+    max-width: 500px
+
+@media (max-width: 1023px)
+  .use
+    padding: 60px 0
+  .use__prop-title
+    font-size: 19px
+  .use__prop-box:after
+    width: 560px
+    background-repeat: no-repeat
+    background-position: center
+  .use__wrap
+    padding-bottom: 310px
+
+@media (max-width: 768px)
+  .use
+    padding: 50px 0
+  .use-title 
+    margin-bottom: 40px
+  .use__prop-box:after
+    display: none
+  .use__product-pack, .use_product 
+    max-width: 390px
+  .use__product-capsule
+    max-width: 92px
+  .use__prop-title 
+    font-size: 18px
+
+@media (max-width: 639px)
+  .use
+    padding: 40px 0
+  .use_product-box
+    position: relative
+    left: 20px
+    transform: none
+    height: 310px
+  .use__wrap
+    display: flex
+    flex-direction: column
+    padding-bottom: 0
+  .use__prop--end
+    align-self: baseline
+  .use__prop-box
+    height: auto
+    flex-direction: column
+    margin-bottom: 40px
+  .use__prop
+    max-width: 100%
+    display: flex
+    align-items: center
+    margin-bottom: 25px
+  .use__prop:last-child
+    margin-bottom: 0
+
+  .use__prop-title br
+    display: none
+  .use__prop-img
+    max-width: 80px
+    max-height: 80px
+    margin: 0
+  .use__prop-img-box
+    width: 100px
+    flex-shrink: 0
+    display: flex
+    align-items: center
+    justify-content: center
+  .use__prop-title
+    text-align: left
+  .use__product-bg
+    display: none  
+
+@media (max-width: 479px)
+  .use
+    padding: 30px 0
+  .use-title
+    margin-bottom: 30px
+  .use__product-pack, .use_product 
+    max-width: 320px
+  .use__product-capsule 
+    max-width: 73px   
+    right: 45px
+  .use_product-box
+    height: 270px
+  .use__prop-title 
+    font-size: 17px
+  .use__prop-img 
+    max-width: 65px
+    max-height: 65px
