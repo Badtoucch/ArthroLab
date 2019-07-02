@@ -237,6 +237,16 @@
 		width: 100%
 		background-color: #f1f4f6
 		border-radius: 0 0 10px 10px
+	&:after
+		content: ''
+		position: absolute
+		right: -40px
+		top: 125px
+		width: 52px
+		height: 283px
+		background: url(../img/form-arrow.svg) no-repeat center
+		+r(1250)
+			display: none
 	&-top
 		padding-top: 18px
 		background-color: #f1f4f6
@@ -384,3 +394,4 @@
 				color: #f3764d
 			.star
 				font-size: 18px
+				display: none

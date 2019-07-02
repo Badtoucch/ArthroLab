@@ -1,0 +1,87 @@
+.ever-popup__inner
+	max-width: 100% !important
+
+.pop-up
+	padding-left: 10px
+	padding-right: 10px
+	position: relative
+.pop-up__box
+	box-shadow: 0 0 35px rgba(134, 147, 162, 0.25)
+	background-color: rgba(255, 255, 255, 0.7)
+	box-sizing: border-box
+	max-width: 100%
+	padding-left: 33px
+	width: 670px
+	height: 460px
+.popup-title
+	text-align: center
+	font-size: 40px
+	h3, h2
+		margin: 0
+
+.pop-up__content
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.image-pack img
+	display: inline-block
+	max-width: 100%
+	max-height: 400px
+
+.pop-up__left
+	flex: 1
+	text-align: center
+	min-width: 250px
+
+.form-box1 > *
+	float: none !important
+	margin: 0 !important
+
+@media (max-width: 999px)
+	.pop-up__box
+		width: 460px
+	.pop-up__content
+		justify-content: center
+	.image-pack
+		padding-bottom: 20px
+		img
+			max-height: 280px
+
+.pupup-title
+	color: #373244
+	font-size: 60px
+	font-weight: bold
+	margin-top: 24px
+	text-align: left
+.pupup-subtitle
+	color: #5788c0
+	font-size: 38px
+	font-weight: 700
+	text-align: left
+	margin-top: 7px
+
+.ever-popup
+	background-color: rgba(255,255,255,.9) !important
+.pop-up
+	.header-center__prod
+		bottom: -115px
+		left: 90px
+.form-box
+	position: relative
+	.form
+		position: relative
+		top: -32px
+		right: -60px
+@media (min-width: 1000px)
+	.ever-popup__inner
+		padding-top: 65px !important
+	.ever-popup__close
+		&:after, &:before
+			background-color: #5788c0 !important
+		right: -50px !important
+	.ever-popup__body
+		position: relative !important
+.ever-popup__close
+		&:after, &:before
+			background-color: #5788c0 !important
