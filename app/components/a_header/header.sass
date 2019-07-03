@@ -319,7 +319,7 @@
 	justify-content: center
 	width: 100%
 	margin-top: 10px
-	margin-bottom: 10px
+	margin-bottom: 20px
 	padding-bottom: 15px
 	position: relative
 	&:before
@@ -395,3 +395,26 @@
 			.star
 				font-size: 18px
 				display: none
+
+.x_country_select
+	select
+    	box-shadow: inset 2px 3px 5px rgba(34,35,39,.09)
+    	border-radius: 5px
+    	border: 1px solid #dedddd
+    	background-color: #fff
+    	height: 60px
+    	cursor: pointer
+    	width: 100%
+    	padding-left: 55px
+    	margin-bottom: 15px
+    	color: #666
+    	padding-right: 15px
+    	font-size: 18px
+    	background: url(../img/world.svg), url(../img/select-triangle.svg)
+    	background-repeat: no-repeat, no-repeat
+    	background-position: 15px center, left calc(100% - 10px) center
+    	background-size: 10%, 5%
+    	appearance: none
+
+select::-ms-expand
+	display: none
