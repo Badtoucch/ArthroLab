@@ -93,8 +93,8 @@ br{
 		content: '';
 		position: absolute;
 		bottom: -3px;
-		left: 0;
-		width: 101%;
+		left: 1px;
+		width: 100.5%;
 		height: 3px;
 		background: #c5c0ca;
 		transform: skew(30deg);
@@ -105,7 +105,7 @@ br{
 		top: 0;
 		right: -3px;
 		width: 3px;
-		height: 101%;
+		height: 100.5%;
 		background: #efebf2;
 		transform: skewY(30deg) ;
 		z-index: -1;}
@@ -122,7 +122,7 @@ br{
 	font-weight: 700;
 	line-height: 23px;
 	color: #ffffff;
-	box-shadow: 0px 12px 32px -16px #bc4f35;
+	box-shadow: 0 27px 10px -24px #bc4f35;
 	cursor: pointer;
 	transition: 0.2s;
 	&:hover{
@@ -135,4 +135,6 @@ br{
 	}
 		
 }
-	
+input::-ms-clear {
+	display: none;
+}
