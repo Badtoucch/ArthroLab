@@ -21,7 +21,8 @@
 					</div>
 					</div>
 					<div class="header-right">
-							<div class="form">
+							<div class="form" id="cloneMobileThis">
+								<div class="form-arrow"><img src="img/form-arrow.svg" alt="arrow"></div>
 									<div class="form-top">
 										<div class="form-top__title">
 												Успейте забронировать<br>
@@ -48,8 +49,13 @@
 											</div>
 										</div>
 									</div>
-									<div class="form-question">Как к вам обращаться?</div>
+									<!-- <div class="form-question">Как к вам обращаться?</div> -->
 									<form action="/submit" class="x_order_form" method="post">
+										<div class="x_country_select">
+											<select name="" id="">
+												<option value="">Vue.js</option>
+											</select>
+										</div>
 										<div class="form__input-name">
 											<input autocomplete="name" class="form__input" name="name" placeholder="Моё имя" required="" type="text">
 										</div>
@@ -66,4 +72,4 @@
 					</div>
 			</div>
     </div>
-</header>
+	</header>
