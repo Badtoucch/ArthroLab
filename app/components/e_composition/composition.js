@@ -38,3 +38,15 @@ function compositionApp() {
 
 compositionApp();
 
+
+function clearComposition() {
+	let w = $(window).innerWidth();
+
+	if (w < 767) {
+		$('.composition__item').removeClass('active');
+	}
+}
+
+clearComposition();
+
+

@@ -97,6 +97,9 @@
 
 .composition__item {
 	margin-bottom: 58px;
+	&:nth-last-child(2) {
+		margin-bottom: 30px;
+	}
 }
 
 .composition__item.active {
@@ -440,6 +443,22 @@
 	.composition__present {
 		margin-right: 0;
 	}
+
+	.composition__item {
+		&:nth-last-child(2) {
+			margin-bottom: 0px;
+		}
+	}
+
+	.composition__name {
+		&::before {
+			background: url(../img/plusplus.svg) no-repeat center center / contain;
+			border: none;
+			width: 12px;
+			height: 12px;
+			top: 1px;
+		}
+	}
 }
 
 @include r(639) {
@@ -466,7 +485,7 @@
 
 	.composition__name {
 		&::before {
-			left: -16px;
+			left: -21px;
 		}
 	}
 
