@@ -102,8 +102,11 @@
 			font-size: 21px
 		+r(639)
 			font-size: 20px
+			margin: 10px 0
 		+r(479)
 			font-size: 19px
+		+r(403)
+			margin: 5px 0 0
 	&-list
 		margin-top: 80px
 		+r(1189)
@@ -209,6 +212,9 @@
 			width: 360px
 		+r(1023)
 			left: 9px
+		+r(767)
+			width: 350px
+			left: 16px
 		+r(639)
 			width: 310px
 			left: 50%
@@ -223,9 +229,11 @@
 			width: 76px
 		+r(1023)
 			left: -21px
+		+r(767)
+			left: -15px
 		+r(639)
-			width: 70px
-			left: 50%
+			width: 64px
+			left: 48%
 			transform: translateX(-231%)
 	&-right
 		width: 270px
@@ -255,7 +263,7 @@
 		content: ''
 		position: absolute
 		right: -40px
-		top: 163px
+		top: 128px
 		z-index: 10
 		+r(1250)
 			display: none
@@ -352,7 +360,10 @@
 		position: relative
 		top: 2px
 	&-old
-		margin-right: 20px
+		width: 50%
+		display: flex
+		flex-direction: column
+		align-items: center
 		&__title
 			color: #666666
 			font-size: 14px
@@ -386,6 +397,7 @@
 				letter-spacing: -0.4px
 	&-new
 		margin-left: 15px
+		width: 50%
 		&__title
 			color: #30302f
 			font-size: 16px

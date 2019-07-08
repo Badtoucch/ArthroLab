@@ -1,19 +1,28 @@
 .ever-popup__inner
 	max-width: 100% !important
-
+	height: 600px
 .pop-up
 	padding-left: 10px
 	padding-right: 10px
 	position: relative
 .pop-up__box
-	box-shadow: 0 0 35px rgba(134, 147, 162, 0.25)
-	background: url(../img/popup-bg.png) no-repeat center
 	background-size: cover
 	box-sizing: border-box
 	max-width: 100%
 	padding-left: 33px
 	width: 730px
-	height: 460px
+	position: relative
+	z-index: 0
+	&:before
+		content: ''
+		position: absolute
+		top: 36px
+		left: 0px
+		background: url(../img/popup-bg.png) no-repeat left center
+		width: 730px
+		height: 460px
+		z-index: -1
+		box-shadow: 0 0 35px rgba(134, 147, 162, 0.25)
 .popup-title
 	text-align: center
 	font-size: 40px
@@ -24,7 +33,6 @@
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
-
 .image-pack img
 	display: inline-block
 	max-width: 100%
@@ -34,7 +42,7 @@
 	flex: 1
 	text-align: center
 	min-width: 250px
-
+	margin-top: 36px
 .form-box1 > *
 	float: none !important
 	margin: 0 !important
@@ -66,24 +74,33 @@
 	background-color: rgba(255,255,255,.9) !important
 .pop-up
 	.header-center__prod
-		bottom: -115px
-		left: 83px
+		margin-top: 36px
+		position: relative
+		bottom: 0px
+		left: 40px
+	.header-pack
+		left: -32px
+		+r(1189)
+			left: -57px
+	.header-capsule
+		+r(1189)
+			left: -54px
 .form-box
 	position: relative
 	.form
 		position: relative
-		top: -32px
+		top: 0px
 		right: 0px
 @media (min-width: 1000px)
 	.ever-popup__inner
-		padding-top: 69px !important
-		padding-bottom: 140px !important
+		padding-top: 0 !important
 	.ever-popup__close
 		&:after, &:before
 			background-color: #5788c0 !important
 		right: 10px !important
+		top: -35px !important
 	.ever-popup__body
 		position: relative !important
 .ever-popup__close
-		&:after, &:before
-			background-color: #5788c0 !important
+	&:after, &:before
+		background-color: #5788c0 !important
