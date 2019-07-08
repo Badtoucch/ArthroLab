@@ -112,7 +112,6 @@ br {
     z-index: -1;
   }
 }
-<<<<<<< HEAD
 .btn {
   font-family: "PT Sans", sans-serif;
   padding-top: 5px;
@@ -144,32 +143,6 @@ br {
     font-weight: 400;
     display: block;
   }
-=======
-.btn{
-	font-family: "PT Sans";
-	padding-top: 5px;
-	width: 100%;
-	height: 70px;
-	border-radius: 5px;
-	background-color: #ffffff;
-	background-image: linear-gradient(to right, #ef5b4d 0%, #f78b4d 50%, #ef5b4d 100%);
-	border-bottom: 5px solid #d85e41;
-	font-size: 32px;
-	font-weight: 700;
-	line-height: 23px;
-	color: #ffffff;
-	box-shadow: 0 27px 10px -24px #bc4f35;
-	cursor: pointer;
-	transition: 0.2s;
-	&:hover{
-		box-shadow: none;
-		transition: 0.2s;
-	}
-	span{font-size: 20px;
-		font-weight: 400;display: block;
-	}
-		
->>>>>>> 88312ce58f6c89d8b76ca6d31a6cc194231caeb0
 }
 input::-ms-clear {
   display: none;
