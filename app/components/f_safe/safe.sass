@@ -1,6 +1,5 @@
 .safe
-  padding: 90px 0
-
+  padding: 30px 0 90px 
 
 .safe-title
   margin-bottom: 50px
@@ -45,8 +44,18 @@
   font-weight: bold  
   color: #373244
   margin-bottom: 15px
-  border-bottom: 1px dashed #cdc9d2
+  position: relative
   padding-bottom: 7px
+.safe__item-title::before 
+  content: ''
+  width: 100%
+  height: 2px
+  background-image: linear-gradient(90deg, #cdc9d2 50%, rgba(0,0,0,0) 50%)
+  background-size: 10px
+  position: absolute
+  bottom: 0
+  left: 0
+
 
 .safe__item-descr
   font-size: 20px
@@ -74,26 +83,28 @@
   height: auto
   z-index: 1  
   right: -55px
+  margin-top: 7px
 
 .safe__product-bg
   position: absolute
   top: 20px
   left: 25px
-  max-width: 515px
+  max-width: 484px
 
 .safe-btn
   max-width: 225px
 
+@media (max-width: 1250px)
+  .safe 
+    padding: 30px 0 70px
 
 @media (max-width: 1190px)
-  .safe 
-    padding: 80px 0
   .safe__product-bg
     max-width: 450px  
 
 @media (max-width: 1023px)
   .safe 
-    padding: 60px 0
+    padding: 40px 0 
 
   .safe-title
     margin-bottom: 40px
@@ -118,10 +129,21 @@
     
   .safe__image-box
     margin-bottom: 30px  
+  .safe__btn-box
+    flex-direction: column 
+    padding-left: 0px
+  .safe__btn-descr
+    margin-left: 0px
+    text-align: center
+  .safe-btn
+    margin-bottom: 20px  
+
+  .safe__item-descr
+    line-height: 1.3  
 
 @media (max-width: 768px)
   .safe 
-    padding: 50px 0
+    padding: 30px 0
 
   .safe-title
     margin-bottom: 35px
@@ -139,8 +161,6 @@
     max-width: 380px
 
 @media (max-width: 639px)
-  .safe 
-    padding: 40px 0
 
   .safe-title
     margin-bottom: 30px
@@ -151,20 +171,9 @@
   .safe__item-descr 
     font-size: 17px
 
-  .safe__btn-box
-    flex-direction: column 
-    padding-left: 0px
-
-  .safe__btn-descr
-    margin-left: 0px
-    text-align: center
-
-  .safe-btn
-    margin-bottom: 20px  
-
 @media (max-width: 479px)
   .safe 
-    padding: 30px 0
+    padding: 25px 0
     
   .safe__item-title 
     font-size: 19px
