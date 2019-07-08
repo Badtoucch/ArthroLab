@@ -1,5 +1,5 @@
 .safe
-  padding: 30px 0 90px 
+  padding: 0px 0 90px 
 
 .safe-title
   margin-bottom: 50px
@@ -49,9 +49,9 @@
 .safe__item-title::before 
   content: ''
   width: 100%
-  height: 2px
+  height: 1px
   background-image: linear-gradient(90deg, #cdc9d2 50%, rgba(0,0,0,0) 50%)
-  background-size: 10px
+  background-size: 16px
   position: absolute
   bottom: 0
   left: 0
@@ -93,10 +93,11 @@
 
 .safe-btn
   max-width: 225px
+  flex-shrink: 0
 
 @media (max-width: 1250px)
   .safe 
-    padding: 30px 0 70px
+    padding: 0px 0 70px
 
 @media (max-width: 1190px)
   .safe__product-bg
@@ -104,7 +105,7 @@
 
 @media (max-width: 1023px)
   .safe 
-    padding: 40px 0 
+    padding: 0 0 40px
 
   .safe-title
     margin-bottom: 40px
@@ -143,7 +144,7 @@
 
 @media (max-width: 768px)
   .safe 
-    padding: 30px 0
+    padding: 0 0 30px 
 
   .safe-title
     margin-bottom: 35px
@@ -173,7 +174,7 @@
 
 @media (max-width: 479px)
   .safe 
-    padding: 25px 0
+    padding: 0 0 25px
     
   .safe__item-title 
     font-size: 19px
@@ -182,6 +183,10 @@
   .safe__product
     max-width: 280px
     right: -15px
+    
+@media (max-width: 460px)
+  .safe__btn-descr
+    line-height: 1.1
 
 @media (max-width: 350px)
   .safe__item
