@@ -7,7 +7,6 @@
 	margin-bottom: -56px
 	position: fixed
 	top: 0
-	
 	+r(1023)
 		margin-bottom: -10px
 	&-content
@@ -22,10 +21,12 @@
 			width: 1023px
 		+r(1023)
 			width: 100%
+			padding-left: 0
+		+r(639)
 			padding: 0
 .nav
 	display: flex
-	+r(1023)
+	+r(639)
 		display: none
 	&-item
 		margin-left: 50px
@@ -41,16 +42,25 @@
 		&:nth-child(3)
 			width: 148px
 		a
-			border-bottom: 2px dotted #000
 			color: #373244
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				height: 2px
+				width: 100%
+				bottom: 0
+				width: 100%
+				background: url(../img/dotted.png) repeat-x center left
 			&:hover
-				border-bottom: 2px dotted transparent
 				font-weight: bold
+				&:before
+					display: none
 	&-btn
 		display: none
 		background-color: #d9dbe0
 		transition: all .5s linear
-		+r(1023)
+		+r(639)
 			display: block
 .navbar_hide
 	width: 63px
@@ -81,8 +91,9 @@
 	top: 16px
 
 .navbar_hide .navbar__wrap
-	opacity: 0
-	visibility: hidden
+	position: absolute
+	right: -240px
+	transition: all 0.5s
 .toggle-mnu.on span
 	background-color: transparent
 .toggle-mnu.on span:before 
@@ -95,6 +106,16 @@
 	padding: 10px 30px 20px
 	height: 1000px
 	border-top: 3px solid #5788c0
+	padding-top: 0
+	padding-left: 0
+	padding-right: 0
+	height: auto
+	padding-bottom: 0
+	width: 240px
+	transition: all .5s;
+	position: absolute
+	background-color: #d9dbe0;
+	right: 0
 .menu__item a
 	text-align: center
 	height: 40px
@@ -103,9 +124,17 @@
 	display: flex
 	justify-content: center
 	align-items: center
-	border-bottom: 1px solid #000
-	border-bottom: 2.4px dotted #000;
+	position: relative
 	color: #373244;
+	padding-bottom: 3px
+	&:before
+		content: ''
+		position: absolute;
+		height: 2px;
+		bottom: 0;
+		left: 1px
+		width: 100%;
+		background: url(../img/dotted.png) repeat-x center left;
 #menu.fixed 
 	position: fixed
 	top: 0
@@ -116,7 +145,9 @@
 	top: 0
 	right: 0
 .logo
-	+r(1023)
+	+r(639)
 		position: absolute
 		left: 0
 		top: 0
+.dotted-correct a:before
+	width: 102%

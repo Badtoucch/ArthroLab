@@ -18,6 +18,10 @@
     $(this)
       .parent()
       .toggleClass("fixed-btn");
+	});
+	$(".menu__item a").on("click", function(e) {
+		$("#toggle-mnu").toggleClass("on");
+		$(".nav-btn").toggleClass("navbar_hide");
   });
 
 $(".reviews-content").on("afterChange", function(event, slick, currentSlide) {
@@ -43,7 +47,8 @@ $(".reviews-content").slick({
       settings: {
         slidesToShow: 2,
 				slidesToScroll: 2,
-				centerMode: false
+				centerMode: false,
+				adaptiveHeight: true
       }
     },
     {
@@ -51,7 +56,8 @@ $(".reviews-content").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-				centerMode: false
+				centerMode: false,
+				adaptiveHeight: true
       }
     },
     {
@@ -59,7 +65,8 @@ $(".reviews-content").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-				centerMode: false
+				centerMode: false,
+				adaptiveHeight: true
       }
     }
   ]
