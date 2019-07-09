@@ -130,6 +130,9 @@ br{
 		box-shadow: none;
 		transition: 0.2s;
 	}
+	&:focus{
+		border-bottom: none;
+	}
 	span{font-size: 20px;
 		font-weight: 400;display: block;
 	}
