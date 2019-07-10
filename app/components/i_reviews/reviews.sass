@@ -15,16 +15,16 @@
 		padding: 30px 30px 25px
 		border: 1px solid transparent
 		position: relative
-		&:hover
-			// background-color: #fff
-			// &:before
-			// 	display: none
-			// .shadow
-			// 	background-image: linear-gradient(to top,#fff 0,rgba(255,255,255,0) 100%)
-			// .reviews-box__cbtn:before
-			// 	background-color: #eaeaea
+		// &:hover
+		// 	background-color: #fff
+		// 	&:before
+		// 		display: none
+		// 	.shadow
+		// 		background-image: linear-gradient(to top,#fff 0,rgba(255,255,255,0) 100%)
+		// 	.reviews-box__cbtn:before
+		// 		background-color: #eaeaea
 		+r(1189)
-			padding: 25px 25px 20px
+			padding: 25px 25psx 20px
 		+r(479)
 			padding: 15px 15px 20px
 		&:before
@@ -109,7 +109,7 @@
 				line-height: 24px
 				max-height: 266px
 			+r(639)
-				max-height: 190px
+				max-height: 150px
 			+r(479)
 				max-width: 306px
 				margin-left: auto
@@ -242,8 +242,20 @@
 		fill: #5789bf
 .rev-dn
 	display: none
-	+r(450)
+	+r(639)
 		display: flex
 .plus-help
 	+r(639)
 		display: flex
+
+@media (min-width: 1281px)
+	.reviews
+		&-box
+			&:hover
+				background-color: #fff
+				&:before
+					display: none
+				.shadow
+					background-image: linear-gradient(to top,#fff 0,rgba(255,255,255,0) 100%)
+				.reviews-box__cbtn:before
+					background-color: #eaeaea

@@ -271,18 +271,24 @@
 }
 
 
-@include r(1219) {
+@include r(1189) {
+	
+	.composition {
+		padding: 60px 0;
+	}
+
 	.composition__prod {
-		max-width: 430px;
+		max-width: 360px;
+		margin-left: 70px;
 	}
 
 	.composition__circle {
-		width: 640px;
-		height: 640px;
+		width: 500px;
+		height: 500px;
 	}
 
 	.composition__item {
-		margin-bottom: 45px;
+		margin-bottom: 35px;
 	}
 
 	.composition__present {
@@ -290,10 +296,11 @@
 	}
 
 	.composition__triangle {
-		width: 330px;
-		height: 330px;
-		top: -16px;
-		right: -185px;
+		width: 290px;
+    	height: 290px;
+    	top: -30px;
+    	right: -167px;
+    	transform: rotate(45deg) skew(9deg,10deg);
 	}
 
 	.composition__item-2, .composition__item-6 {
