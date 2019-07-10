@@ -82,9 +82,14 @@
   width: 100%
   height: auto
   z-index: 1  
-  right: -55px
+  right: -25px
   margin-top: 7px
-
+.safe__capsule
+  position: absolute
+  width: 100%
+  z-index: 1  
+  right: 81px
+  max-width: 155px
 .safe__product-bg
   position: absolute
   top: 20px
@@ -102,32 +107,28 @@
 @media (max-width: 1190px)
   .safe__product-bg
     max-width: 450px  
+  .safe__capsule
+    right: 69px
+    max-width: 130px
 
 @media (max-width: 1023px)
   .safe 
     padding: 0 0 40px
-
   .safe-title
     margin-bottom: 40px
-
   .safe__wrap
     flex-direction: column-reverse
-
   .safe__info
     width: 100%
-
   .safe__image-box
     width: 100%
-
   .safe__product
     position: relative
     max-width: 450px
     margin: 0 auto
-    right: -35px
-
+    right: 0px
   .safe__product-bg
     display: none 
-    
   .safe__image-box
     margin-bottom: 30px  
   .safe__btn-box
@@ -138,9 +139,15 @@
     text-align: center
   .safe-btn
     margin-bottom: 20px  
-
   .safe__item-descr
     line-height: 1.3  
+  .safe__capsule
+    top: 0
+    right: 233px
+    max-width: 115px
+  .use__prop-img-box
+    height: 116px  
+
 
 @media (max-width: 768px)
   .safe 
@@ -160,6 +167,9 @@
 
   .safe__product
     max-width: 380px
+  .safe__capsule
+    right: 192px
+    max-width: 97px  
 
 @media (max-width: 639px)
 
@@ -171,6 +181,9 @@
 
   .safe__item-descr 
     font-size: 17px
+  .safe__capsule 
+    right: 127px
+    max-width: 85px
 
 @media (max-width: 479px)
   .safe 
@@ -182,7 +195,15 @@
 
   .safe__product
     max-width: 280px
-    right: -15px
+    right: 0px
+  .safe__capsule
+    max-width: 71px
+    right: 74px
+  
+  .safe__image-box
+    max-width: 320px  
+    margin-left: auto
+    margin-right: auto
     
 @media (max-width: 460px)
   .safe__btn-descr
@@ -193,3 +214,7 @@
     padding-left: 0    
   .safe__item:after
     display: none
+  .safe__image-box 
+    max-width: 290px
+  .safe__capsule
+    right: 58px   
