@@ -17,6 +17,6 @@
     "gulp-svgmin": "^2.2.0",
     "gulp-wait": "0.0.2",
     "run-sequence": "^2.2.1",
-    "zip-local": "^0.3.4"
+    "zip-local": "^0.3.5"
   }
 }
